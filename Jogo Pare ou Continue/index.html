@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Pare ou Continue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-panel">
+        <h2>Pare ou Continue</h2>
+        <div class="game-info">
+            <p>Letra: <span id="currentLetter"></span></p>
+            <p>Tempo: <span id="timer">60</span> segundos</p>
+            <p>Placar: <span id="score">0</span> pontos</p>
+        </div>
+        <div class="categories">
+            <label>Nome: <input type="text" id="name" disabled></label>
+            <label>Animal: <input type="text" id="animal" disabled></label>
+            <label>Cidade: <input type="text" id="city" disabled></label>
+            <label>Objeto: <input type="text" id="object" disabled></label>
+        </div>
+        <button onclick="startGame()">Iniciar Jogo</button>
+        <button onclick="submitAnswers()">Enviar Respostas</button>
+        <button onclick="resetGame()">Reiniciar</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
