@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Horas Trabalhadas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-panel">
+        <h2>Calculadora de Horas e Valor</h2>
+        <div class="input-section">
+            <label>Salário por Hora (R$): <input type="number"
+            id="hourlyRate" step="0.01" min="0" value="20.00"></label>
+            <div class="day-section">
+                <h3>Segunda-feira</h3>
+                <label>Entrada: <input type="time" id="monIn"></label>
+                <label>Saída: <input type="time" id="monOut"></label>
+            </div>
+            <div class="day-section">
+                <h3>Terça-feira</h3>
+                <label>Entrada: <input type="time" id="tueIn"></label>
+                <label>Saída: <input type="time" id="tueOut"></label>
+            </div>
+            <div class="day-section">
+                <h3>Quarta-feira</h3>
+                <label>Entrada: <input type="time" id="wedIn"></label>
+                <label>Saída: <input type="time" id="wedOut"></label>
+            </div>
+            <div class="day-section">
+                <h3>Quinta-feira</h3>
+                <label>Entrada: <input type="time" id="thuIn"></label>
+                <label>Saída: <input type="time" id="thuOut"></label>
+            </div>
+            <div class="day-section">
+                <h3>Sexta-feira</h3>
+                <label>Entrada: <input type="time" id="friIn"></label>
+                <label>Saída: <input type="time" id="friOut"></label>
+            </div>
+        </div>
+        <div class="result-section">
+            <p>Total Horas: <span id="totalHours">0.0</span> h</p>
+            <p>Total Ganho Diário (Último Dia Válido): <span id="dailyTotal">R$ 0.00</span></p>
+            <p>Total Ganho Semanal: <span id="weeklyTotal">R$ 0.00</span></p>
+            <button onclick="calculate()">Calcular</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
